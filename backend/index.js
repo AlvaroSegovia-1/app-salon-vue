@@ -5,7 +5,13 @@ const app = express()
 
 // Definir una ruta
 app.get('/',(req, res)=>{
- res.send('Hola')
+
+    const product = {
+        id:1,
+        price: 30,
+        name: "laptop"
+    }
+ res.json(product)
 })
 
 // Definir puerto
